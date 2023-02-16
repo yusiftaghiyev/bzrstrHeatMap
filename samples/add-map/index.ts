@@ -13,8 +13,10 @@ async function initMap(): Promise<void> {
   const position = { lat: -25.344, lng: 131.031 };
 
   // Request needed libraries.
-  const [{ Map }, { AdvancedMarkerView }] = 
-    await Promise.all([google.maps.importLibrary("maps"), google.maps.importLibrary("marker")]);
+  const [{ Map }, { AdvancedMarkerView }] = await Promise.all([
+    google.maps.importLibrary("maps"),
+    google.maps.importLibrary("marker")
+  ]);
 
   // The map, centered at Uluru
   map = new Map(
