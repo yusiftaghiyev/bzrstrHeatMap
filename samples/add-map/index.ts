@@ -42,6 +42,4 @@ async function initMap(): Promise<void> {
 initMap();
 // [END maps_add_map]
 
-//google.maps.importLibrary('core').then(initMap);
-
 export {};
