@@ -74,7 +74,7 @@ module.exports = function (eleventyConfig) {
                   /<link rel="stylesheet" href="\.\/assets\/index\..*.css">/gm,
                   () => `<style>${asset.source.trim()}</style>`
                 );
-                break;
+              
               case "index":
                 html = html.replace(
                   /<script type="module" crossorigin src="\.\/assets\/index\..*.js"><\/script>/gm,
